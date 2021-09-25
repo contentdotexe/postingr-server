@@ -20,7 +20,7 @@ const PostType = new GraphQLObjectType({
     },
     author: {
       type: GraphQLString,
-      resolve: (post) => post.createdAt,
+      resolve: (post) => post.author,
     },
   }),
 });

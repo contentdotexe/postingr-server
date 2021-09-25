@@ -18,8 +18,8 @@ export default mutationWithClientMutationId({
       const post = new PostModel({
         title,
         body,
-        createdAt: new Date(),
-        author: "1234",
+        createdAt: new Date().toISOString(),
+        author: "IuINjkL3489gdfd4285485243759quweifhskdjdsaj=",
       });
       const result = await post.save();
       console.log(result._doc);
@@ -27,7 +27,6 @@ export default mutationWithClientMutationId({
         post: {
           ...result._doc,
           id: result.id,
-          author: result._doc.author 
         },
         error: null,
         success: "Post created successfully",
