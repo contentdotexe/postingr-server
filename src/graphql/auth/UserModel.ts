@@ -1,3 +1,4 @@
+import { builtinModules } from "module";
 import * as mongoose from "mongoose";
 
 const UserModel = new mongoose.Schema({
@@ -24,3 +25,5 @@ const UserModel = new mongoose.Schema({
     },
   ],
 });
+
+module.exports = mongoose.model('User', UserModel)

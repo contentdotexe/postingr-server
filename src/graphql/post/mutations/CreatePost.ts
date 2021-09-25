@@ -8,7 +8,7 @@ export default mutationWithClientMutationId({
   inputFields: {
     title: {
       type: new GraphQLNonNull(GraphQLString),
-    },
+    },  
     body: {
       type: new GraphQLNonNull(GraphQLString),
     },
